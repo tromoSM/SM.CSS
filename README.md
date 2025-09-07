@@ -30,6 +30,6 @@ HTML attributes → **SM.CSS** → real CSS.
 | 06  | Floating header                             | `header-main`                 |                 |
 | 07  | Backdrop filter blur value                  | `&backdropval`                | Value must be a number |
 
-contact us - tromoSM.dumbass@gmail.com
-current version : 1.0
-info : stable
+#### contact us - tromoSM.dumbass@gmail.com
+#### current version : 1.0
+#### info : stable
