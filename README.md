@@ -29,6 +29,12 @@ HTML attributes → **SM.CSS** → real CSS.
 | 05  | Flex direction (must come after all `$flex` element names) | `-c` / `--column`<br>`-r` / `--row`<br>`-cr` / `--column reverse`<br>`-rr` / `--row reverse` | Example: `$flex="c"` |
 | 06  | Floating header                             | `header-main`                 |                 |
 | 07  | Backdrop filter blur value                  | `&backdropval`                | Value must be a number |
+| 08  | Authors name                                   setting="user".innerText     | this will be used for the license attribute|
+| 09  | License name                                |  license                      | ex: license="cc"
+
+                                           
+   
+   ex: license="cc"
 
 #### contact us - tromoSM.dumbass@gmail.com
 #### current version : 1.0
