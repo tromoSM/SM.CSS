@@ -1,13 +1,72 @@
-/* 
-© 2025 - tromoSM. Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
-*/
 const $main = document.getElementsByTagName('html')[0];
 const $light = document.getElementsByTagName('body')[0];
 const $smartmanwithglasses = document.getElementsByTagName('head')[0];
 
 const SM = "SM";
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+const usrr = document.querySelector('[setting="user"]');
+const rightsrr = document.querySelector('[setting="rights-reserved"]').innerText;
+const _$data_dih = new Date().getFullYear();
+const licEle = document.querySelector('[license]');
+const $license = licEle.getAttribute("license").toUpperCase();
+let  $licenseR;
+let  $licenseRR;
+if(usrr && usrr.innerText.trim() === ""){
+switch ($license){
+    case "CC BY 4.0":
+       $licenseRR= "Licensed under the Creative Commons Attribution 4.0 International License. You may share and adapt this work with credit to the author."
+     break;
+  
+     case "CC BY-SA 4.0":
+        $licenseRR="Licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. You may share and adapt this work with credit, but derivative works must be licensed under the same terms."
+     break;
+   
+     case "CC BY-NC 4.0":
+        $licenseRR="Licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. You may share and adapt this work with credit, but not for commercial purposes."
+     break;  
+   
+     case "CC BY-NC-ND 4.0":
+        $licenseRR="Licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. You may share this work with credit, but no modifications or commercial use are permitted."
+     break;   
+     
+     case "MIT Licese":
+        $licenseRR='Permission is granted free of charge to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies, provided this notice is included. The work is provided "as is", without warranty.'
+     break;   
+    default :$licenseRR=""
+     
+        
+}
+}
+else{
+$licenseR = $license;
+}
+licEle.innerText="© "+_$data_dih+" - "+usrr.innerText+". "+rightsrr+" rights reserved."+"(" +$licenseR+").";
+
+
+
+
+    let $metaCharValue;
+const SM$il = document.querySelector('[setting="meta-charset"]');
+const allvalve = SM$il.getAttribute("setting");
+if (allvalve == "meta-charset"){
+    if(document.querySelector('[setting="meta-charset"]').innerHTML==""){
+     $metaCharValue = "UTF-8";
+    }
+    else{
+    $metaCharValue =   document.querySelector('[setting="meta-charset"]').innerHTML;
+    }
+}
+
+
+
+const $metaR = document.createElement('meta');
+$metaR.setAttribute('charset',$metaCharValue);
+
+
     document.querySelectorAll(`[${SM}="flex-responsive-center"]`).forEach(frcSM => {
     frcSM.style.display="flex";
     frcSM.style.justifyContent="center";
@@ -46,7 +105,7 @@ $main,$light.style.margin="0";
 
 
 })
-
+})
 
 document.querySelectorAll('[\\$flex]').forEach(fzvm => {
 const $xmas = fzvm.getAttribute('$flex')
@@ -105,7 +164,12 @@ default :
    
     value must me a number
 
-08.
+08.Authors name                                             setting="user".innerText
+   
+   this will be used for the license attribute
 
+09.License name                                               license
+   
+   ex: license="cc"
 
 */
