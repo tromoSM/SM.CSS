@@ -7,16 +7,16 @@
 - SM="flex-responsive-center"
 - SM="flex-center"
 - SM="header-main"
-- 
+  
 And applies the appropriate styles dynamically with JavaScript.
 **SM.CSS** lets you design without writing raw CSS and without wasting any time.
 
 HTML attributes → **SM.CSS** → real CSS.
 
 # How to use **SM.CSS**
-#### you can get the latest version [here](https://github.com/tromoSM/SM.CSS/blob/main/main.js)
-#### or you can link the js in you html directly as ```<script src="https://tromosm.github.io/SM.CSS/main.js"></script>```
+#### you can get the latest version at [here](https://github.com/tromoSM/SM.CSS/blob/main/main.js) (unstable and stable) or [get the latest stable version](https://github.com/tromoSM/SM.CSS/blob/main/main.SMcss)
 
+#### or you can link the js in you html directly as ```<script src="https://tromosm.github.io/SM.CSS/main.js"></script>```(unstable/stable) or use  ```<script src="https://tromosm.github.io/SM.CSS/main.js"></script>```(stable)
 # What each attributes and propeties mean
 
 | SID  | Description                                 | Attribute / Value            | Notes / Example |
@@ -37,5 +37,5 @@ HTML attributes → **SM.CSS** → real CSS.
    ex: license="cc"
 
 #### contact us - tromoSM.dumbass@gmail.com
-#### current version : 1.0
-#### info : stable
+#### current version : 1.01
+#### info : unstable
