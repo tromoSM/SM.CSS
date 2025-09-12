@@ -16,7 +16,7 @@ HTML attributes → **SM.CSS** → real CSS.
 # How to use **SM.CSS**
 #### you can get the latest version at [here](https://github.com/tromoSM/SM.CSS/blob/main/main.js) (unstable and stable) or [get the latest stable version](https://github.com/tromoSM/SM.CSS/blob/main/main.SMcss)
 
-#### or you can link the js in you html directly as ```<script src="https://tromosm.github.io/SM.CSS/main.js"></script>```(unstable/stable) or use  ```<script src="https://tromosm.github.io/SM.CSS/main.js"></script>```(stable)
+#### or you can link the js in you html directly as ```<script src="https://tromosm.github.io/SM.CSS/main.js"></script>```(unstable/stable) or use  ```<script src="https://tromosm.github.io/SM.CSS/main.SMcss"></script>```(stable)
 # What each attributes and propeties mean
 
 | SID  | Description                                 | Attribute / Value            | Notes / Example |
@@ -30,12 +30,11 @@ HTML attributes → **SM.CSS** → real CSS.
 | 06  | Floating header                             | `header-main`                 |                 |
 | 07  | Backdrop filter blur value                  | `&backdropval`                | Value must be a number |
 | 08  | Authors name                                   setting="user".innerText     | this will be used for the license attribute|
-| 09  | License name                                |  license                      | ex: license="cc"
-
-                                           
-   
-   ex: license="cc"
+| 09  | License name                                |  license=""                   | ex: license="cc"
+ | 10  | Custom license text                         |   cstm=""                     | ex: cstm="license text"|
+| 11 | Reserved rights                        |  setting="rights-reserved".innertext  | ex: license="cc"|
 
 #### contact us - tromoSM.dumbass@gmail.com
-#### current version : 1.01
-#### info : unstable
+#### current version : 1.03
+#### current stable version : 1.02
+#### info : don't use the unstable version if you're not a developer.
