@@ -5,6 +5,10 @@ const $smartmanwithglasses = document.getElementsByTagName('head')[0];
 
 const SM = "SM";
 
+const hellnah = document.getElementsByTagName(tromoSM-type);
+    hellnah.forEach(asf => {
+asf.style.display="none"
+    })
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -12,10 +16,13 @@ const usrr = document.querySelector('[setting="user"]');
 const rightsrr = document.querySelector('[setting="rights-reserved"]').innerText;
 const _$data_dih = new Date().getFullYear();
 const licEle = document.querySelector('[license]');
+const maxdududdu = document.querySelector('[cstm]');
+const $maxfckoffbruh = maxdududdu.getAttribute('cstm');
 const $license = licEle.getAttribute("license").toUpperCase();
-let  $licenseR;
-let  $licenseRR;
-if(usrr && usrr.innerText.trim() === ""){
+let  $licenseR ="";
+let  $licenseRR ="";
+if (usrr && usrr.innerText.trim() !== "") {
+if($maxfckoffbruh!=undefined){
 switch ($license){
     case "CC BY 4.0":
        $licenseRR= "Licensed under the Creative Commons Attribution 4.0 International License. You may share and adapt this work with credit to the author."
@@ -33,18 +40,20 @@ switch ($license){
         $licenseRR="Licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. You may share this work with credit, but no modifications or commercial use are permitted."
      break;   
      
-     case "MIT Licese":
+     case "MIT License":
         $licenseRR='Permission is granted free of charge to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies, provided this notice is included. The work is provided "as is", without warranty.'
      break;   
-    default :$licenseRR=""
+    default :$licenseRR=$maxfckoffbruh
      
         
+}}
 }
-}
+
 else{
 $licenseR = $license;
+$licenseRR=$maxfckoffbruh;
 }
-licEle.innerText="© "+_$data_dih+" - "+usrr.innerText+". "+rightsrr+" rights reserved."+"(" +$licenseR+").";
+licEle.innerText="© "+_$data_dih+" - "+usrr.innerText+". "+rightsrr+" rights reserved."+"(" +$license+"). " + $licenseRR;
 
 
 
@@ -172,4 +181,11 @@ default :
    
    ex: license="cc"
 
+10.Custom license text                                                cstm=""
+ 
+   ex: cstm="license text"
+ 
+11.Reserved rights                                           setting="rights-reserved".innertext
+
+   ex: <tromoSM-type setting="rights-reserved">all</tromoSM-type>
 */
