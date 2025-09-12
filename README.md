@@ -32,7 +32,7 @@ HTML attributes → **SM.CSS** → real CSS.
 | 08  | Authors name                                   setting="user".innerText     | this will be used for the license attribute|
 | 09  | License name                                |  license=""                   | ex: license="cc"
  | 10  | Custom license text                         |   cstm=""                     | ex: cstm="license text"|
-| 11 | Reserved rights                        |  setting="rights-reserved".innertext  | ex: license="cc"|
+| 11 | Reserved rights                        |  setting="rights-reserved".innertext  | `<tromoSM-type setting="rights-reserved">all</tromoSM-type>`|
 
 #### contact us - tromoSM.dumbass@gmail.com
 #### current version : 1.03
