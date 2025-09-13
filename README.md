@@ -1,4 +1,4 @@
-![just a logo.](https://github.com/tromoSM/SM.CSS/blob/main/logo.xss.png?raw=true)
+![just a logo.](https://github.com/tromoSM/SM.CSS/blob/main/logo.xvrss.png?raw=true)
 
 #### **SM.CSS** is a javascript runtime that read your custom attributes in your .html and translate them into real CSS styles.
 
