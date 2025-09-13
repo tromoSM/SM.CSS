@@ -1,16 +1,20 @@
-
+/* 
+© 2025 - tromoSM. Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+*/
+//V1.04
 const $main = document.getElementsByTagName('html')[0];
 const $light = document.getElementsByTagName('body')[0];
 const $smartmanwithglasses = document.getElementsByTagName('head')[0];
 
 const SM = "SM";
 
-const hellnah = document.getElementsByTagName(tromoSM-type);
-    hellnah.forEach(asf => {
-asf.style.display="none"
-    })
-
 document.addEventListener("DOMContentLoaded", () => {
+Array.from(document.getElementsByTagName('tromoSM-type')).forEach(asf => {
+asf.style.display="none";
+asf.setAttribute('tromoSM-nr','$true')
+asf.setAttribute('aria-hidden','true')
+    })
 
 const usrr = document.querySelector('[setting="user"]');
 const rightsrr = document.querySelector('[setting="rights-reserved"]').innerText;
@@ -188,4 +192,11 @@ default :
 11.Reserved rights                                           setting="rights-reserved".innertext
 
    ex: <tromoSM-type setting="rights-reserved">all</tromoSM-type>
+ 
+12.User & Licensing details                                   <tromoSM-type></tromoSM-type>   
+   
+    ex : <tromoSM-type setting="user">tromoSM</tromoSM-type>
+
+    using 'tromoSM-type' allows the users and licensing form to be not readable on reader mode on browsers 
+
 */
