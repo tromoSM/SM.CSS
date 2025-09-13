@@ -33,8 +33,11 @@ HTML attributes → **SM.CSS** → real CSS.
 | 09  | License name                                |  license=""                   | ex: license="cc"
  | 10  | Custom license text                         |   cstm=""                     | ex: cstm="license text"|
 | 11 | Reserved rights                        |  setting="rights-reserved".innertext  | `<tromoSM-type setting="rights-reserved">all</tromoSM-type>`|
+| 12 | User & Licensing details               | `<tromoSM-type></tromoSM-type>`         | using 'tromoSM-type' allows the users and licensing form to be not readable on reader mode on browsers |
 
 #### contact us - tromoSM.dumbass@gmail.com
-#### current version : 1.03
-#### current stable version : 1.02
+#### current version : 1.04
+#### current stable version : 1.04
 #### info : don't use the unstable version if you're not a developer.
+
+##### © 2025 - tromoSM. All rights reserved.
