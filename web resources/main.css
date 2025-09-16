@@ -1,0 +1,284 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('https://raw.githack.com/sahibjotsaggu/San-Francisco-Pro-Fonts/refs/heads/master/SF-Pro.ttf') format('truetype');
+
+  font-style: normal;
+} 
+:root{
+    --headerahh : 50px;
+    --mainAhh : black;;
+    --dawgAhh : white;
+    --dude : #c7c7c7;
+    --lit : #cfcfcf;
+}
+[tromoSM=header-main]{
+background-color: var(--dawgAhh);
+height: fit-content;
+top: 0;
+color: var(--mainAhh);
+position: fixed;
+z-index: 99999999 !important;
+font-weight: 300;
+transform:skewX(-30deg) translateX(-15px);
+padding: 0px 0px 0px 20px;
+padding-right: 50px !important;
+
+border-radius: 0px 0px 50px 10px;
+animation: main 0.5s 0.4s forwards ease, light 0.5s 0ms forwards cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+@keyframes light{
+    from{
+        transform: translateY(-25px)skewX(-30deg) translateX(-15px);
+    }
+    to{
+        transform: translateY(0px)skewX(-30deg) translateX(-15px);
+    }
+}
+@keyframes main{
+    from{padding-right: 50px !important;
+        width: var(--headerahh);
+    }
+    to{
+padding-right: 0px !important;
+width: 99vw;
+
+    }
+}
+::-webkit-scrollbar{
+    z-index: 1 !important;
+}
+*::selection{
+    background-color: rgba(0, 0, 0, 0.493);
+}
+[tromoSM=mainS],[tromoSM=mainH]{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    scrollbar-width: thin;
+    transition: 0.2s;
+    font-family: SF Pro,blinkMacSystemFont,arial,sans-serif;
+}
+[tromoSM=greatest]{
+    font-weight: 600;
+}
+[tromoSM=s]{
+padding: 0.5px;
+width: 1px;
+overflow: hidden;
+color: var(--mainAhh);
+border-radius: 50px;
+background-color: var(--mainAhh);
+align-items: baseline;
+height: 1px;
+z-index: +8;
+flex-wrap: wrap;
+position: relative;
+display: inline-flex;
+aspect-ratio: 1 /1;
+box-shadow :0px 0px 0px 2px var(--dawgAhh);
+}
+[tromoSM=rr-f]{
+    transform: translateX(-1px);
+    position: absolute;
+}
+[tromoSM=noSke]{
+transform:skewX(30deg);
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+[tromoSM=func-measure]{
+    position: static;
+    width: fit-content;
+    flex-wrap: wrap;
+    display: flex;
+}
+h1[tromoSM=main]{
+    font-size: 1125%;
+    letter-spacing: 0.79px;
+    text-align: center;
+    padding: 0;
+    margin: 120px 0px 0px 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    will-change: letter-spacing;
+    color: var(--dawgAhh);
+    animation: nih 0.3s forwards 1;
+}
+@keyframes nih{
+    from{
+ letter-spacing: -10px;        
+    }
+    to{
+    letter-spacing: 0.79px;
+
+    }
+}
+[tromoSM=last]{
+transform: translate(-14px);
+    font-weight: 400;
+    margin-left: 5px;
+}
+[tromoSM=lastw]{
+    margin: 0;
+    padding: 0;
+transform: translate(-34px);
+}
+[tromoSM=ds]{
+position: static;
+font-weight: 850;
+padding: 0;
+margin: 0;
+bottom: 0;
+border-radius: 50px;
+transform: translate(-10px,135px) scale(1);
+width: 30px;
+display: inline-block;
+height: 30px;
+animation:  tr-r 0.4s forwards ease;
+z-index: +99;
+background-color: var(--dawgAhh);
+box-shadow :0px 0px 0px 7px --mainAhh;
+
+}
+@keyframes tr-r{
+    from{
+transform: translate(-10px,135px) scale(0);
+    }  50%{
+box-shadow :0px 0px 0px 0px var(--mainAhh);
+transform: translate(-10px,135px) scale(1);
+    }
+ to{
+box-shadow :0px 0px 0px 7px var(--mainAhh);
+transform: translate(-10px,135px) scale(1);
+    }
+}
+
+[tromoSM=git]{
+    font-family: SF Pro;
+    align-items: center;
+    border: 1px solid var(--dawgAhh);
+    outline: none;
+    gap: 5px;
+    font-weight: 500;
+    color: var(--dawgAhh);
+    display: flex;
+    cursor: pointer;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: rgba(255, 255, 255, 0);
+    padding:  7px 20px;
+}
+[tromoSM=git] path{
+    fill: var(--dawgAhh) !important;
+}
+[tromoSM=git]:hover,[tromoSM=git]:hover path{
+    fill: var(--mainAhh) !important;
+    color: var(--mainAhh);
+    background-color: var(--dawgAhh);
+    transition: 0ms;
+
+}
+a,a:link,a:visited{
+    color: inherit;
+    text-decoration: underline 1px;
+}
+
+[tromoSM=lm]{
+    font-family: SF Pro;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0);
+    outline: none;
+    gap: 5px;
+    font-weight: 500;
+    color: var(--dawgAhh);
+    display: flex;
+    cursor: pointer;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    text-decoration: underline 1px solid rgba(0, 0, 0, 0);
+    transition: none;
+    background-color: transparent;
+    padding:  7px 20px;
+}
+[tromoSM=lm]:hover{
+    text-decoration: underline 1px solid var(--dawgAhh);
+
+}
+
+p[tromoSM=description]{
+    font-family: SF Pro;
+    text-align: justify;
+    margin:0px 20px;
+    font-weight: 400;
+    padding: 0;
+    color: var(--lit);
+}
+[tromoSM=flexR]{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+[tromoSM=flexMS]{
+display: flex;
+flex-wrap: wrap;
+margin-top: 20px;
+justify-content: center;
+align-items: center;
+}
+img[tromoSM=webR]{
+    position: fixed;
+    right: 0;
+    pointer-events: none;
+    z-index: -1;
+    filter: blur(70px);
+    transform: skewX(-10deg);
+    animation:  fuh 15s 0ms linear 1 forwards ;
+    height: 140vh;
+    width: 50vw;
+}
+@keyframes fuh{
+    from{
+    width: 50vw;
+    filter: blur(70px) hue-rotate(0deg);
+    }
+    to{
+    width: 70vw;
+    filter: blur(550px) hue-rotate(-50deg);
+    }
+}
+[tromoSM=noSkeR]{
+    padding: 2px;
+    margin: 0;
+    position: fixed;
+    z-index: +999999999;
+    right: 0;
+    border-radius: 50px;
+    width: 15px;
+    background-color: var(--dawgAhh);
+    color: var(--mainAhh);
+}
+[tromoSM=noSkeR]:hover{
+    background-color: var(--dude);
+
+}
+
+[tromoSM=mainS]{
+    background-color: var(--mainAhh);
+}
+[tromoSM=nstuff]{
+    z-index: +88;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    padding: 0;
+    font-size: xx-small;
+    bottom: 0;
+    margin: 0;
+    color: var(--dude);
+    left: 0;
+    
+}
